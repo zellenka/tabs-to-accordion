@@ -1,0 +1,206 @@
+@import "normalize"
+
+body
+	background: url(/img/Background.png) no-repeat
+	background-size: cover
+	padding-top: 110px
+
+
+.wrapper
+	display: flex
+	max-width: 940px
+	justify-content: center
+	margin: 0 auto
+	padding: 10px
+
+.content
+	width: 100%
+
+.sidebar
+	min-width: 224px
+
+
+
+
+
+
+
+
+
+
+
+
+.sidebar ul
+	list-style: none
+	padding-left: 14px
+
+.sidebar li
+	a
+		display: flex
+		justify-content: space-between
+		width: 100%
+		background: linear-gradient(to right, #fefefe, #fafafa)
+		padding: 11px
+		box-sizing: border-box
+		position: relative
+		font-family: "Lucida Sans Unicode"
+		font-size: 14px
+		color: #878787
+		text-decoration: none
+		align-items: center
+
+.sidebar li
+	a::after
+		content: ""
+		position: absolute
+		bottom: 0
+		right: 0
+		background: url(/img/border-bottom.png) no-repeat
+		width: 100%
+		height: 1px
+
+.sidebar li
+	.active-menu
+		background: #005382
+		font-size: 17px
+		color: #fff
+
+.sidebar li
+	.active-menu::before
+		content: ""
+		bottom: -14px
+		left: -14px
+		position: absolute
+		width: 0
+		height: 0
+		border-top: 14px solid black
+		border-left: 14px solid transparent
+
+.sidebar li
+	.active-menu::after
+		content: ""
+		top: 0
+		left: -14px
+		position: absolute
+		width: 14px
+		height: auto
+		background: #005382
+
+.icon-menu
+	display: block
+
+.sidebar li:nth-child(1) .icon-menu
+	background: url(/img/sprite.png) no-repeat -125px -3px
+	width: 24px
+	height: 23px
+
+.sidebar li:nth-child(2) .icon-menu
+	background: url('/img/sprite.png') no-repeat -24px -3px
+	width: 16px
+	height: 16px
+
+.sidebar li:nth-child(3) .icon-menu
+	background: url('/img/sprite.png') no-repeat -46px -3px
+	width: 16px
+	height: 16px
+
+.sidebar li:nth-child(4) .icon-menu
+	background: url('/img/sprite.png') no-repeat -68px -3px
+	width: 15px
+	height: 15px
+
+.sidebar li:nth-child(5) .icon-menu
+	background: url('/img/sprite.png') no-repeat -89px -3px
+	width: 8px
+	height: 16px
+
+.sidebar li:nth-child(6) .icon-menu
+	background: url('/img/sprite.png') no-repeat -103px -3px
+	width: 16px
+	height: 16px
+
+
+
+
+// tablist
+
+#tabs
+	display: flex
+	width: 100%
+	justify-content: flex-start
+	position: relative
+	list-style: none
+	padding: 0
+	margin: 0
+	align-items: flex-end
+
+#tabs a
+	background-image: linear-gradient(to bottom, #eaeaea, #fff)
+	border: 1px solid #fff
+	padding: 10px 15px
+	box-shadow: 0 0 11px -2px #6f6f6f
+	margin-right: 1px
+	font-family: Arial
+	font-size: 18px
+	font-weight: bold
+	text-decoration: none
+	color: #6f6f6f
+
+#tabs li
+	display: flex
+    align-items: flex-end
+
+#tabs div
+	position: absolute
+	top: 50px
+	left: 0
+	display: none
+	background: white
+	box-shadow: 0 0 11px -2px #6f6f6f
+	z-index: 1
+	width: 100%
+	height: 360px
+	text-align: center
+
+#tabs .active-tab
+	padding: 15px 20px
+	z-index: 2
+	color: #000
+	border-bottom: none
+	box-shadow: 0 -3px 11px -5px #6f6f6f
+
+@media only screen and (max-width: 680px)
+	#tabs .active-tab a
+		color: red
+
+	.sidebar
+		width: 64px
+		min-width: 64px
+
+	.menu-link
+		display: none
+
+	#tabs li
+		display: initial
+
+	.sidebar li a
+		justify-content: center
+
+	.sidebar ul
+		margin: 0
+
+	#tabs
+		display: block
+		box-shadow: 0 0 11px -2px #6f6f6f
+
+	#tabs div
+		position: initial
+		box-shadow: none
+
+	#tabs a
+		text-align: center
+		padding: 10px 0
+		display: block
+
+	#tabs .active-tab
+		padding: 10px 0
