@@ -394,7 +394,7 @@ template {
   display: none; }
 
 body {
-  background: url(/img/Background.png) no-repeat;
+  background: url(../img/Background.png) no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
   padding-top: 110px; }
@@ -486,32 +486,32 @@ body {
   display: block; }
 
 .sidebar li:nth-child(1) .icon-menu {
-  background: url(/img/sprite.png) no-repeat -125px -3px;
+  background: url("../img/sprite.png") no-repeat -125px -3px;
   width: 24px;
   height: 23px; }
 
 .sidebar li:nth-child(2) .icon-menu {
-  background: url("/img/sprite.png") no-repeat -24px -3px;
+  background: url("../img/sprite.png") no-repeat -24px -3px;
   width: 16px;
   height: 16px; }
 
 .sidebar li:nth-child(3) .icon-menu {
-  background: url("/img/sprite.png") no-repeat -46px -3px;
+  background: url("../img/sprite.png") no-repeat -46px -3px;
   width: 16px;
   height: 16px; }
 
 .sidebar li:nth-child(4) .icon-menu {
-  background: url("/img/sprite.png") no-repeat -68px -3px;
+  background: url("../img/sprite.png") no-repeat -68px -3px;
   width: 15px;
   height: 15px; }
 
 .sidebar li:nth-child(5) .icon-menu {
-  background: url("/img/sprite.png") no-repeat -89px -3px;
+  background: url("../img/sprite.png") no-repeat -89px -3px;
   width: 8px;
   height: 16px; }
 
 .sidebar li:nth-child(6) .icon-menu {
-  background: url("/img/sprite.png") no-repeat -103px -3px;
+  background: url("../img/sprite.png") no-repeat -103px -3px;
   width: 16px;
   height: 16px; }
 
