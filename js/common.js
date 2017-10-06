@@ -21,8 +21,8 @@ $(function() {
     });
 
         var url = window.location.href;
-        if(url === 'http://localhost:3000/'){
-            history.pushState("", "", "http://localhost:3000/#General");
+        if(url === 'https://zellenka.github.io/tabs-to-accordion/'){
+            history.pushState("", "", "https://zellenka.github.io/tabs-to-accordion//#General");
         }
         else if (window.location.hash.length > 0) {
         $('a[href="' + window.location.hash + '"]').click();
